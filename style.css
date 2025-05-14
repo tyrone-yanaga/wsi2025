@@ -1,0 +1,62 @@
+.tab-content {
+    display: none;
+    padding: 15px;
+    border-top: none;
+    color: white; /* Ensures text is visible on dark background */
+}body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    /* Background image setup - modified to show whole image */
+    background-image: url('images/background.png');
+    background-size: contain; /* Changed from 'cover' to 'contain' */
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #000; /* Adding a background color in case the image doesn't fill the screen */
+    min-height: 100vh;
+    color: white; /* Inherited from what was the header color */
+}
+
+.container {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* Tab styling */
+.tabs {
+    overflow: hidden;
+    border: 1px solid rgba(204, 204, 204, 0.5);
+    background-color: rgba(241, 241, 241, 0.7); /* Semi-transparent */
+    border-radius: 8px 8px 0 0;
+}
+
+.tab-button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #333;
+}
+
+.tab-button:hover {
+    background-color: rgba(221, 221, 221, 0.8);
+}
+
+.tab-button.active {
+    background-color: rgba(204, 204, 204, 0.8);
+}
+
+.content-wrapper {
+    background-color: rgba(51, 51, 51, 0.8); /* Same as previous header, semi-transparent */
+    padding: 15px;
+    border-radius: 0 0 8px 8px;
+}

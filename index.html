@@ -9,19 +9,36 @@
 <body>
     <div class="container">        
         <div class="tabs">
-            <button class="tab-button active" onclick="openTab(event, 'home')">details</button>
-            <button class="tab-button" onclick="openTab(event, 'about')">schedule</button>
+            <button class="tab-button active" onclick="openTab(event, 'details')">details</button>
+            <button class="tab-button" onclick="openTab(event, 'schedule')">schedule</button>
             <button class="tab-button" onclick="openTab(event, 'services')">our court</button>
             <button class="tab-button" onclick="openTab(event, 'contact')">our city</button>
         </div>
         
         <div class="content-wrapper">
-            <div id="home" class="tab-content" style="display: block;">
-                <p>4v4, 20 minute games, swiss -> double elim</p>
+            <div id="details" class="tab-content" style="display: block;">
+                <ul class="arrow-list">
+                    <li>4v4 games</li>
+                    <li>20 minute games</li>
+                    <li>Swiss format</li>
+                    <li>Double elimination playoffs</li>
+                </ul>
             </div>
             
-            <div id="about" class="tab-content">
-                <p>sat: 9am-1pm morning games, 1pm-2pm lunch, 2pm-7pm afternoon games</p>
+            <div id="schedule" class="tab-content" style="display: block;"">
+                <p>sat:</p>
+                <ul class="arrow-list">
+                    <li>9am-1pm morning games</li>
+                    <li>1pm-2pm lunch</li>
+                    <li>2pm-7pm afternoon games</li>
+                </ul>
+                <p>sun:</p>
+                <ul class="arrow-list">
+                    <li>9am-1pm double elim</li>
+                    <li>1pm-2pm lunch</li>
+                    <li>2pm-4pm more elim</li>
+                    <li>finals</li>
+                </ul>
             </div>
             
             <div id="services" class="tab-content">
